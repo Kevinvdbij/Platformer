@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3882514023922524686b0b1dae49e575, type: 3}
+  m_Name: Brains
+  m_EditorClassIdentifier: 
+  name: Brains
+  image: {fileID: 21300000, guid: d0b6254438ecd4f4598ea250ea48a69c, type: 3}
+  item: {fileID: 114903418290536466, guid: 9fd3fe1ce21adeb479983dee87b710ef, type: 2}

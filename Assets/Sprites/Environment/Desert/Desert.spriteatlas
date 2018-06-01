@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Desert
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+    - {fileID: 2800000, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300042, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300040, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300036, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300034, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300002, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300000, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300006, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300004, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300010, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300008, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300014, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300012, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300066, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300038, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300022, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300024, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300026, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300028, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300058, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300036, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300020, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300032, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300018, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300010, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300062, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300064, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300060, guid: ee50abd20ee99f446a0ce0ccbaa04d8d, type: 3}
+  - {fileID: 21300000, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300002, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300022, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300042, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300024, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300014, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300004, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300006, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300016, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300030, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300026, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300044, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300012, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300028, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300038, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300040, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  - {fileID: 21300034, guid: ed78cda7ef966784a820b9795684717f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Desert_21
+  - Desert_20
+  - Desert_9
+  - Desert_8
+  - Desert_1
+  - Desert_0
+  - Desert_3
+  - Desert_2
+  - Desert_5
+  - Desert_4
+  - Desert_7
+  - Desert_6
+  - Desert_19
+  - Desert_10
+  - Desert_11
+  - Desert_12
+  - Desert_13
+  - Desert_14
+  - Desert_15
+  - Details_18
+  - Details_10
+  - Details_16
+  - Details_9
+  - Details_5
+  - Desert_17
+  - Desert_18
+  - Desert_16
+  - Details_0
+  - Details_1
+  - Details_11
+  - Details_21
+  - Details_12
+  - Details_7
+  - Details_2
+  - Details_3
+  - Details_8
+  - Details_15
+  - Details_13
+  - Details_22
+  - Details_6
+  - Details_14
+  - Details_19
+  - Details_20
+  - Details_17
+  m_Tag: Desert
+  m_IsVariant: 0

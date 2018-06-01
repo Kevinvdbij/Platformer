@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Robot
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2225b595e0c90f841a5940dfdc4ab7d8, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: cffe3326f9a0ac6478229c321970f2b4, type: 3}
+  - {fileID: 21300000, guid: cfeeb2e017f826a4290bd6c37ccc8355, type: 3}
+  - {fileID: 21300000, guid: 63d4ac757669ea0478ea434a82d1170c, type: 3}
+  - {fileID: 21300000, guid: cd56ebabe105954489c8af9496a978b8, type: 3}
+  - {fileID: 21300000, guid: e36e03e666778f546b0a8857df9f3e63, type: 3}
+  - {fileID: 21300000, guid: 5f91ad970b0a97047acbdc0041dd00be, type: 3}
+  - {fileID: 21300000, guid: a731869b6bca8b544a21c063e864e711, type: 3}
+  - {fileID: 21300000, guid: de645327b3b55bc448cd84f30ce0771d, type: 3}
+  - {fileID: 21300000, guid: 562a27ce1e4b0c840ad02fefd179e113, type: 3}
+  - {fileID: 21300000, guid: c3e778773e5d1394595ee4451e12c1c2, type: 3}
+  - {fileID: 21300000, guid: 62515a7a9db9c3d479349f2c365d7813, type: 3}
+  - {fileID: 21300000, guid: 86cf2e21e134db44a8c3140bb43310cd, type: 3}
+  - {fileID: 21300000, guid: 5ff15c8539ea1b04b9c55be0758e5544, type: 3}
+  - {fileID: 21300000, guid: d19ebc95213af98499b768289f6350b7, type: 3}
+  - {fileID: 21300000, guid: 8a14672798f203c4d9eb57fbb95dfc52, type: 3}
+  - {fileID: 21300000, guid: 85ff989c2ef1a6748b978b7a6fa20a7a, type: 3}
+  - {fileID: 21300000, guid: 3c32a0ce8284e034e8437c112a438f70, type: 3}
+  - {fileID: 21300000, guid: 07dfcf0e63d554d4788bee5632abff98, type: 3}
+  - {fileID: 21300000, guid: 2cbb6e2f1fe2b9644828e1f531bfec0b, type: 3}
+  - {fileID: 21300000, guid: a1b068561a4c81f4dae23402637b1370, type: 3}
+  - {fileID: 21300000, guid: ba917a0c2004ce44680677b25c5d0a8b, type: 3}
+  - {fileID: 21300000, guid: fcbe363442a5fcb4ca836a6626eebab1, type: 3}
+  - {fileID: 21300000, guid: e9f45b657554e624caa87b18f070573f, type: 3}
+  - {fileID: 21300000, guid: b65b35674e4cf694797bc60e65046a83, type: 3}
+  - {fileID: 21300000, guid: f4b269cb8ed4f42409ae1bf2926ee7c5, type: 3}
+  - {fileID: 21300000, guid: 3ec7157c4aa59b44cb7f1a1ee876f167, type: 3}
+  - {fileID: 21300000, guid: 1fddbbc28d435c14682d213e8379dc45, type: 3}
+  - {fileID: 21300000, guid: 8360caf7a2acec744af406a3355af6a6, type: 3}
+  - {fileID: 21300000, guid: 3c0c9e8424a7fa64fab7f192c8b12b8a, type: 3}
+  - {fileID: 21300000, guid: 919e590501723364dba96f5da351ec96, type: 3}
+  - {fileID: 21300000, guid: ab163576d1a4fc24f87fe375666ddfcb, type: 3}
+  - {fileID: 21300000, guid: 0afa66d2d9a019e4581042006423f5da, type: 3}
+  - {fileID: 21300000, guid: df204f05d74fd5e45b23def07c1de555, type: 3}
+  - {fileID: 21300000, guid: 4e4709384ebefaf469c457876b9877eb, type: 3}
+  - {fileID: 21300000, guid: ed1bfc0c853b8494887dceb781a7c0bb, type: 3}
+  - {fileID: 21300000, guid: e1143f898d2ca4944bfdc9b7f7dd3d7b, type: 3}
+  - {fileID: 21300000, guid: 66c28eb12a6ebb2409509b7035662409, type: 3}
+  - {fileID: 21300000, guid: 522cb9bb634b7dd42af36bf7fe2ba2b7, type: 3}
+  - {fileID: 21300000, guid: fe626d7213486654896503b3b38319b5, type: 3}
+  - {fileID: 21300000, guid: d6301a55f9e86794a93ddf46e5329094, type: 3}
+  - {fileID: 21300000, guid: 97d0590eb90ccb045a959ea754655435, type: 3}
+  - {fileID: 21300000, guid: 73f5755b3bb490a409f506a6725491e4, type: 3}
+  - {fileID: 21300000, guid: 61682bfab55709446b6b3446c583e236, type: 3}
+  - {fileID: 21300000, guid: 2a1a5e6eb7cb4f243a67e3e39b606d3a, type: 3}
+  - {fileID: 21300000, guid: b3b14ec0938d2c242a34ba4981a82e42, type: 3}
+  - {fileID: 21300000, guid: dd73d45cfccaa584986140b4a0b19fc7, type: 3}
+  - {fileID: 21300000, guid: 1862c3bbbd9fc594686811baa72c9310, type: 3}
+  - {fileID: 21300000, guid: ba7a03744a4363e468a3474db698c83c, type: 3}
+  - {fileID: 21300000, guid: 917ac781128928946a5a0fecb650cbc2, type: 3}
+  - {fileID: 21300000, guid: b891ba54717c93b43b530c07aa72f2a2, type: 3}
+  - {fileID: 21300000, guid: 30996f5218643d5449604022ac837f7a, type: 3}
+  - {fileID: 21300000, guid: 961ea0ef5a9b4384ea919bb70661ba9b, type: 3}
+  - {fileID: 21300000, guid: 481e0270a36243e489103d7b1d9f4132, type: 3}
+  - {fileID: 21300000, guid: 9b2ebb54305c8304082c45f38452888a, type: 3}
+  - {fileID: 21300000, guid: 25442f902976b5643ba602a83fe4b222, type: 3}
+  - {fileID: 21300000, guid: 874096527e1317e4cb03684b57763d1c, type: 3}
+  - {fileID: 21300000, guid: baadf720780935d469355b52738c43b6, type: 3}
+  - {fileID: 21300000, guid: c9aa53e0fdca4884aa7fc7200b89ed65, type: 3}
+  - {fileID: 21300000, guid: 8985ef2c7a9f98345aac9fee27eae8ae, type: 3}
+  - {fileID: 21300000, guid: 13b3ede7ad68ab946b260632aec7c3df, type: 3}
+  - {fileID: 21300000, guid: b7c1fa177e9a6624ca2db22863e7dcb9, type: 3}
+  - {fileID: 21300000, guid: 0381b2aedf2a4c94f87da948228a4a0f, type: 3}
+  - {fileID: 21300000, guid: f383f3efc064f6c4bb991051a2f40a57, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - dead1
+  - dead2
+  - hurt
+  - jump3
+  - walk1
+  - idle1
+  - walk5
+  - walk8
+  - walk6
+  - jump4
+  - walk3
+  - idle2
+  - idle4
+  - walk7
+  - walk4
+  - walk2
+  - idle3
+  - jump1
+  - dead3
+  - jump2
+  - shoot1
+  - shoot4
+  - shoot5
+  - shoot3
+  - run2
+  - run12
+  - run3
+  - run11
+  - shoot2
+  - shoot6
+  - run7
+  - run1
+  - run6
+  - run8
+  - run10
+  - run4
+  - run9
+  - run5
+  - dead4
+  - crouchwalk1
+  - crouchwalk3
+  - dead6
+  - crouchwalk2
+  - crouchwalk4
+  - crouch
+  - dead5
+  - slide
+  - climb6
+  - climb2
+  - climb4
+  - climb1
+  - climb3
+  - climb5
+  - blast3
+  - blast4
+  - blast2
+  - blast1
+  - blast6
+  - bullet3
+  - blast5
+  - bullet2
+  - bullet4
+  - bullet1
+  m_Tag: Robot
+  m_IsVariant: 0
