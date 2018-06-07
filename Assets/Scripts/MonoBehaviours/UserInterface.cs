@@ -8,6 +8,7 @@ public class UserInterface : MonoBehaviour {
     public Image healthbar;
     public Text damageText;
     public Canvas canvas;
+    public GameObject victoryUI;
 
     private void Awake()
     {
@@ -31,6 +32,11 @@ public class UserInterface : MonoBehaviour {
         dText.transform.position += new Vector3(Random.Range(-15, 15), Random.Range(-15, 15));
         dText.text = damage.ToString();
         StartCoroutine(DestroyAfter(dText.gameObject, 1f));
+    }
+
+    public void SetVictoryUI(bool state)
+    {
+        victoryUI.SetActive(state);
     }
 
     public IEnumerator DestroyAfter(GameObject obj, float time)

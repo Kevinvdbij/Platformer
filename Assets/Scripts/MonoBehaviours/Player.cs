@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : Character
 {
     [Header("Player")]
+    public bool isPlayer2;
     public float movementSpeed;
     public float jumpPower;
 
@@ -32,10 +33,10 @@ public class Player : Character
     // Handles player input and chracter movement
     private void Movement()
     {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        float moveHorizontal = Input.GetAxisRaw(isPlayer2 ? "Horizontal" : "Horizontal2");
         rb2D.AddForce((Vector2.right * movementSpeed) * moveHorizontal, ForceMode2D.Impulse);
 
-        if (Input.GetButtonDown("Jump") && IsGrounded)
+        if (Input.GetButtonDown(isPlayer2 ? "Jump" : "Jump2") && IsGrounded)
         {
             rb2D.AddForce(Vector2.up * jumpPower, ForceMode2D.Force);
         }
@@ -60,8 +61,9 @@ public class Player : Character
     {
         base.UpdateAnimation();
         animator.SetBool("isCrouching", IsCrouching);
+        animator.SetBool("isGrounded", IsGrounded);
 
-        if (Input.GetButtonDown("Shoot"))
+        if (Input.GetButtonDown(isPlayer2 ? "Shoot" : "Shoot2"))
         {
             animator.SetTrigger("Shoot");
         }
@@ -79,7 +81,7 @@ public class Player : Character
     {
         get
         {
-            if (Input.GetAxisRaw("Horizontal") != 0)
+            if (Input.GetAxisRaw(isPlayer2 ? "Horizontal" : "Horizontal2") != 0)
             {
                 return true;
             }
@@ -95,13 +97,13 @@ public class Player : Character
     {
         get
         {
-            if (Input.GetAxis("Horizontal") < 0)
+            if (Input.GetAxis(isPlayer2 ? "Horizontal" : "Horizontal2") < 0)
             {
                 isFlipped = true;
                 emitter.localPosition = new Vector2(-originEmitterPos.x, originEmitterPos.y);
                 emitter.GetComponent<SpriteRenderer>().flipX = true;
             }
-            else if (Input.GetAxis("Horizontal") > 0)
+            else if (Input.GetAxis(isPlayer2 ? "Horizontal" : "Horizontal2") > 0)
             {
                 isFlipped = false;
                 emitter.localPosition = originEmitterPos;

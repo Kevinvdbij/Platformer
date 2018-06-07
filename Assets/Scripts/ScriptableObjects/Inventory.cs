@@ -8,10 +8,20 @@ public class Inventory : ScriptableObject
     public List<InventoryItem> items =
         new List<InventoryItem>();
 
-    public Inventory Init(Inventory inventory)
+    public void Init(Inventory template)
     {
-        items = inventory.items;
-        return this;
+        items.Clear();
+        foreach(InventoryItem item in template.items)
+        {
+            items.Add(item);
+        }
+    }
+
+    public Inventory GetInstance()
+    {
+        Inventory instance = CreateInstance(typeof(Inventory)) as Inventory;
+        instance.Init(this);
+        return instance;
     }
 
     public void AddItem(InventoryItem item)

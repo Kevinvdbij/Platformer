@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,4 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab71279079ccf8e45b5e4a48791e8551, type: 3}
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}

@@ -8,8 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab71279079ccf8e45b5e4a48791e8551, type: 3}
-  m_Name: ZombieInventory
+  m_Script: {fileID: 11500000, guid: 7b3dafd976bcdc8488e731910371feb9, type: 3}
+  m_Name: Player2Health
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: c64754afc35ad7940a2daff93406b659, type: 2}
+  current: 100
+  minimum: 0
+  maximum: 100
+  starting: 100

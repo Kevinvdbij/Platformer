@@ -16,9 +16,9 @@ TagManager:
   - Player
   - Enemy
   - DeadCharacter
-  - 
-  - 
-  - 
+  - CameraConfiner
+  - Player 1
+  - Player 2
   - 
   - 
   - 

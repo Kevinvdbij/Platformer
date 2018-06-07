@@ -95,6 +95,7 @@ public class Enemy : Character
         inventory.DropAllItems(transform.position, transform.rotation);
         animator.SetBool("isDead", true);
         gameObject.layer = LayerMask.NameToLayer("DeadCharacter");
+        col2D.enabled = false;
         rb2D.isKinematic = true;
         rb2D.velocity = Vector2.zero;
         transform.position = new Vector2(transform.position.x, transform.position.y - 0.13f);

@@ -28,6 +28,13 @@ public class Health : ScriptableObject
         return this;
     }
 
+    public Health GetInstance(bool setMaxHealth)
+    {
+        Health instance = CreateInstance(typeof(Health)) as Health;
+        instance.Init(this, setMaxHealth);
+        return instance;
+    }
+
     public void Increase(float amount)
     {
         current = Mathf.Clamp(current + amount, minimum, maximum);
@@ -36,6 +43,11 @@ public class Health : ScriptableObject
     public void Decrease(float amount)
     {
         current = Mathf.Clamp(current - amount, minimum, maximum);
+    }
+
+    public void InstaKill()
+    {
+        current = minimum;
     }
 
     public bool IsDepleted

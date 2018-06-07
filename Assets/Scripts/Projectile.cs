@@ -8,12 +8,14 @@ public class Projectile : MonoBehaviour
     public bool flip;
     public float damage;
     public float speed;
+    public float lifespan;
     private Rigidbody2D rb2D;
 
     // Called when the gameobject is enabled
     private void OnEnable()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        StartCoroutine(SelfDestruct(lifespan));
     }
 
     // Called every frame
@@ -39,6 +41,12 @@ public class Projectile : MonoBehaviour
         {
             enemy.DecreaseHealth(damage);
         }
+        Destroy(gameObject);
+    }
+
+    private IEnumerator SelfDestruct(float lifespan)
+    {
+        yield return new WaitForSeconds(lifespan);
         Destroy(gameObject);
     }
 }

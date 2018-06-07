@@ -14,22 +14,27 @@ public enum CharacterType
 [RequireComponent(typeof(Rigidbody2D))]
 public class Character : MonoBehaviour
 {
-    [Header("Character")]
+    [Header("Health")]
     public Health healthAsset;
     public bool createHealthInstance = true;
+    public bool setMaxHealthOnSpawn;
+    protected Health health;
 
+    [Header("Inventory")]
     public Inventory inventoryAsset;
     public bool createInventoryInstance = true;
-
-    protected Health health;
     protected Inventory inventory;
 
+    [Header("Combat")]
     public CharacterType type = CharacterType.NEUTRAL;
     public float damage;
+
+    [Header("Animation")]
     protected Animator animator;
     protected SpriteRenderer spriteRend;
     public bool isFlipped = false;
 
+    [Header("Physics")]
     protected Rigidbody2D rb2D;
     protected BoxCollider2D col2D;
     protected bool isGrounded;
@@ -59,12 +64,12 @@ public class Character : MonoBehaviour
 
         if (healthAsset)
         {
-            health = createHealthInstance ? (ScriptableObject.CreateInstance(typeof(Health)) as Health).Init(healthAsset, true) : healthAsset.Init(true);
+            health = createHealthInstance ? healthAsset.GetInstance(setMaxHealthOnSpawn) : healthAsset.Init(setMaxHealthOnSpawn);
         }
 
         if (inventoryAsset)
         {
-            inventory = createInventoryInstance ? (ScriptableObject.CreateInstance(typeof(Inventory)) as Inventory).Init(inventoryAsset) : inventoryAsset;
+            inventory = createInventoryInstance ? inventoryAsset.GetInstance() : inventoryAsset;
         }
 
         if (spawn != null)
@@ -195,6 +200,12 @@ public class Character : MonoBehaviour
         {
             return isGrounded;
         }
+    }
+
+    public void OnKillBarrier()
+    {
+        health.current = health.minimum;
+        OnDeath();
     }
 
     // Called when the collider receives a collision
