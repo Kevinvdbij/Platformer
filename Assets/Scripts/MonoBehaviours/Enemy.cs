@@ -58,7 +58,7 @@ public class Enemy : Character
     {
         if (Vector2.Distance(transform.position, player.transform.position) > attackDistance)
         {
-            Vector2 velocity = GetDirection(player.transform);
+            Vector2 velocity = new Vector2(GetDirection(player.transform).x, rb2D.velocity.y);
             rb2D.velocity = velocity;
         }
         else if (canAttack)
@@ -77,7 +77,7 @@ public class Enemy : Character
         if (Vector2.Distance(transform.position, waypoints[WaypointIndex].position) > patrolDistance)
         {
             Vector2 velocity = GetDirection(waypoints[WaypointIndex]);
-            rb2D.velocity = velocity;
+            rb2D.velocity = new Vector2(velocity.x, rb2D.velocity.y);
         }
         else
         {
@@ -174,6 +174,11 @@ public class Enemy : Character
     {
         get
         {
+            if (state == EnemyState.ATTACK)
+            {
+                isFlipped = GetDirection(player.transform).x < 0 ? true : false;
+                return GetDirection(player.transform).x < 0 ? true : false;
+            }
             if (rb2D.velocity.x > 0.2f)
             {
                 isFlipped = false;

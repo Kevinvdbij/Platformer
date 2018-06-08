@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab71279079ccf8e45b5e4a48791e8551, type: 3}
-  m_Name: PlayerInventory
+  m_Name: Player2Inventory
   m_EditorClassIdentifier: 
   items: []

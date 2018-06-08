@@ -128,6 +128,15 @@ public class Character : MonoBehaviour
             OnDeath();
     }
 
+    // Returns amount of health the character has left
+    public float Health
+    {
+        get
+        {
+            return health.current;
+        }
+    }
+
     // Handles adding an item to the character inventory
     public void AddItem(InventoryItem item)
     {
@@ -200,12 +209,6 @@ public class Character : MonoBehaviour
         {
             return isGrounded;
         }
-    }
-
-    public void OnKillBarrier()
-    {
-        health.current = health.minimum;
-        OnDeath();
     }
 
     // Called when the collider receives a collision

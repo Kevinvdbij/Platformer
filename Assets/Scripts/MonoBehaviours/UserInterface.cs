@@ -5,7 +5,9 @@ using System.Collections;
 [RequireComponent(typeof(Canvas))]
 public class UserInterface : MonoBehaviour {
     public Health healthData;
+    public Health healthDataP2;
     public Image healthbar;
+    public Image healthbarP2;
     public Text damageText;
     public Canvas canvas;
     public GameObject victoryUI;
@@ -18,11 +20,17 @@ public class UserInterface : MonoBehaviour {
     private void Start()
     {
         UpdateHealthBar();
+        UpdateHealthBarP2();
     }
 
     public void UpdateHealthBar()
     {
         healthbar.fillAmount = healthData.current / healthData.maximum;
+    }
+
+    public void UpdateHealthBarP2()
+    {
+        healthbarP2.fillAmount = healthDataP2.current / healthDataP2.maximum;
     }
 
     public void DisplayDamagePopup(Character character, float damage)
