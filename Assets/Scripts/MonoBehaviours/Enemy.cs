@@ -56,12 +56,17 @@ public class Enemy : Character
 
     private void AttackBehaviour()
     {
-        if (Vector2.Distance(transform.position, player.transform.position) > attackDistance)
+        if (!player)
+        {
+            state = EnemyState.PATROL;
+        }
+
+        if (player && Vector2.Distance(transform.position, player.transform.position) > attackDistance)
         {
             Vector2 velocity = new Vector2(GetDirection(player.transform).x, rb2D.velocity.y);
             rb2D.velocity = velocity;
         }
-        else if (canAttack)
+        else if (player && canAttack)
         {
             animator.SetTrigger("isAttacking");
             canAttack = false;
@@ -176,6 +181,9 @@ public class Enemy : Character
         {
             if (state == EnemyState.ATTACK)
             {
+                if (!player)
+                    return false;
+
                 isFlipped = GetDirection(player.transform).x < 0 ? true : false;
                 return GetDirection(player.transform).x < 0 ? true : false;
             }
